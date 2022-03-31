@@ -19,9 +19,12 @@ const Coins = () => {
             <p className='text-center mb-12 txt-xl font-normal'>
                 Total Coins: {coins.length}
             </p>
+            
+            <div className='grid gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 justify-items-center'>
             {
                 coins.map(coin => <CoinCard coin={coin} key={coin.id}></CoinCard>) 
             }
+            </div>
         </div>
     );
 };
